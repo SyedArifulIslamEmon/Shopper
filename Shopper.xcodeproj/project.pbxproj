@@ -13,6 +13,11 @@
 		3FD100EA1CA1C80D005C26C4 /* Shopper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FD100E81CA1C80D005C26C4 /* Shopper.xcdatamodeld */; };
 		3FD100EC1CA1C80D005C26C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD100EB1CA1C80D005C26C4 /* Assets.xcassets */; };
 		3FD100EF1CA1C80D005C26C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD100ED1CA1C80D005C26C4 /* LaunchScreen.storyboard */; };
+		3FD100F71CA1C991005C26C4 /* ShopperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD100F61CA1C991005C26C4 /* ShopperTableViewController.swift */; };
+		3FD100FC1CA1CCB1005C26C4 /* ShoppingList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD100F81CA1CCB1005C26C4 /* ShoppingList+CoreDataProperties.swift */; };
+		3FD100FD1CA1CCB1005C26C4 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD100F91CA1CCB1005C26C4 /* ShoppingList.swift */; };
+		3FD100FE1CA1CCB1005C26C4 /* ShoppingListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD100FA1CA1CCB1005C26C4 /* ShoppingListItem+CoreDataProperties.swift */; };
+		3FD100FF1CA1CCB1005C26C4 /* ShoppingListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD100FB1CA1CCB1005C26C4 /* ShoppingListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		3FD100EB1CA1C80D005C26C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD100EE1CA1C80D005C26C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD100F01CA1C80D005C26C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD100F61CA1C991005C26C4 /* ShopperTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopperTableViewController.swift; sourceTree = "<group>"; };
+		3FD100F81CA1CCB1005C26C4 /* ShoppingList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FD100F91CA1CCB1005C26C4 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		3FD100FA1CA1CCB1005C26C4 /* ShoppingListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FD100FB1CA1CCB1005C26C4 /* ShoppingListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,14 @@
 		3FD100E01CA1C80D005C26C4 /* Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				3FD100F81CA1CCB1005C26C4 /* ShoppingList+CoreDataProperties.swift */,
+				3FD100F91CA1CCB1005C26C4 /* ShoppingList.swift */,
+				3FD100FA1CA1CCB1005C26C4 /* ShoppingListItem+CoreDataProperties.swift */,
+				3FD100FB1CA1CCB1005C26C4 /* ShoppingListItem.swift */,
 				3FD100E11CA1C80D005C26C4 /* AppDelegate.swift */,
 				3FD100E31CA1C80D005C26C4 /* ViewController.swift */,
 				3FD100E51CA1C80D005C26C4 /* Main.storyboard */,
+				3FD100F61CA1C991005C26C4 /* ShopperTableViewController.swift */,
 				3FD100EB1CA1C80D005C26C4 /* Assets.xcassets */,
 				3FD100ED1CA1C80D005C26C4 /* LaunchScreen.storyboard */,
 				3FD100F01CA1C80D005C26C4 /* Info.plist */,
@@ -139,8 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FD100E41CA1C80D005C26C4 /* ViewController.swift in Sources */,
+				3FD100FD1CA1CCB1005C26C4 /* ShoppingList.swift in Sources */,
 				3FD100E21CA1C80D005C26C4 /* AppDelegate.swift in Sources */,
+				3FD100FC1CA1CCB1005C26C4 /* ShoppingList+CoreDataProperties.swift in Sources */,
+				3FD100FF1CA1CCB1005C26C4 /* ShoppingListItem.swift in Sources */,
+				3FD100F71CA1C991005C26C4 /* ShopperTableViewController.swift in Sources */,
 				3FD100EA1CA1C80D005C26C4 /* Shopper.xcdatamodeld in Sources */,
+				3FD100FE1CA1CCB1005C26C4 /* ShoppingListItem+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
