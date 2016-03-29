@@ -9,27 +9,27 @@
         <scene sceneID="SRB-La-DEb">
             <objects>
                 <tableViewController id="qKm-d0-J0x" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IEN-l1-bH3">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" id="IEN-l1-bH3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingListCell" textLabel="G1Z-NJ-tni" detailTextLabel="Iqc-WS-AfH" style="IBUITableViewCellStyleSubtitle" id="JB8-84-KSa">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingListCell" textLabel="G1Z-NJ-tni" detailTextLabel="Iqc-WS-AfH" rowHeight="67" style="IBUITableViewCellStyleSubtitle" id="JB8-84-KSa">
+                                <rect key="frame" x="0.0" y="92" width="320" height="67"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JB8-84-KSa" id="3VP-06-HU7">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G1Z-NJ-tni">
-                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <rect key="frame" x="15" y="17" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iqc-WS-AfH">
-                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="15" y="36.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -48,7 +48,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNH-KA-pFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="409"/>
+            <point key="canvasLocation" x="695" y="402"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KY2-6i-gM9">
@@ -66,7 +66,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ne-Sa-m1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="409"/>
+            <point key="canvasLocation" x="257" y="402"/>
         </scene>
     </scenes>
 </document>
