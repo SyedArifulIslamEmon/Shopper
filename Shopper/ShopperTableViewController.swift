@@ -118,8 +118,18 @@ class ShopperTableViewController: UITableViewController {
         
         cell.textLabel?.text = shoppingList.name
         cell.detailTextLabel?.text = shoppingList.store + " " + shoppingList.date
+        
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let itemsTableViewController = storyboard?.instantiateViewControllerWithIdentifier("ShoppingListItems") as? ShoppingListTableViewController {
+            let list = shoppingLists[indexPath.row]
+            itemsTableViewController.managedObjectContext = managedObjectContext
+            itemsTableViewController.selectedShoppingList = list
+            navigationController?.pushViewController(itemsTableViewController, animated: true) }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
 
