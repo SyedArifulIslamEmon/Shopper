@@ -20,8 +20,21 @@ class ShoppingListTableViewController: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addShoppingListItem:")
+        
 
         reloadData()
+        
+        var totalCost = 0.0
+        
+        for list in shoppingListItems {
+            totalCost += Double(list.price) * Double(list.quantity)
+        }
+        
+        if let selectedShoppingList = selectedShoppingList {
+            title = selectedShoppingList.name + String(format: " $%.2f", totalCost)
+        } else {
+            title = "Shopping List Detail"
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +57,7 @@ class ShoppingListTableViewController: UITableViewController {
         let alert = UIAlertController(title: "Add", message: "Shopping List Item", preferredStyle: .Alert)
         
         //action that occurs when add button is pressed
+        
         let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
             if let nameTextField = alert.textFields?[0], priceTextField = alert.textFields?[1], quantityTextField = alert.textFields?[2], shoppingListItemEntity = NSEntityDescription.entityForName("ShoppingListItem", inManagedObjectContext: self.managedObjectContext), name = nameTextField.text, price = priceTextField.text, quantity = quantityTextField.text {
                 
@@ -117,6 +131,36 @@ class ShoppingListTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ShoppingListItemCell", forIndexPath: indexPath)
+        let shoppingListItem = shoppingListItems[indexPath.row]
+        
+        //Commented out code was proved unnecessary :D <3
+        
+       // let sPrice = String(shoppingListItem.price)
+       // let sQuantity = String(shoppingListItem.quantity)
+        
+        if shoppingListItem.purchased == true {
+            cell.accessoryType = .None
+            shoppingListItem.purchased = false
+        } else {
+            cell.accessoryType = .Checkmark
+            shoppingListItem.purchased = true
+        }
+        
+        //cell.textLabel?.text = shoppingListItem.name
+        //cell.textLabel?.text = sQuantity + " " + sPrice
+        
+        do {
+            try self.managedObjectContext.save()
+        } catch {
+            print("Error saving the managed object contxt!")
+        }
+        
+        reloadData()
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
 
     /*
     // Override to support conditional editing of the table view.
